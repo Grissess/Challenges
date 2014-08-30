@@ -1,0 +1,85 @@
+Utilizations:
+Case|Machines|Repairman Utility|Average Computer Utility
+DEBUG:  Starting case 1 with params [20.0, 1.0]
+DEBUG:  Simulation begins at 0.000000
+DEBUG:  Tick at 0.000000
+DEBUG:  Breaking down from state 0
+DEBUG:  Repairing <Machine state=1>
+DEBUG:  Repairing from state 1
+DEBUG:  Tick at 7.000000
+DEBUG:  Starting from state 2
+DEBUG:  Finished repairs
+DEBUG:  Tick at 16.500000
+DEBUG:  Breaking down from state 0
+DEBUG:  Repairing <Machine state=1>
+DEBUG:  Repairing from state 1
+DEBUG:  Simulation ends at 21.000000
+Event stream:
+<Simulation start @0.000000>
+<StateChange of <Machine state=2> None->0 @0.000000>
+<StateChange of <RepairMan state=1> None->0 @0.000000>
+<Tick @0.000000>
+<StateChange of <Machine state=2> 0->1 @7.000000>
+<StateChange of <RepairMan state=1> 0->1 @7.000000>
+<StateChange of <Machine state=2> 1->2 @7.000000>
+<Tick @7.000000>
+<StateChange of <Machine state=2> 2->0 @16.500000>
+<StateChange of <RepairMan state=1> 1->0 @16.500000>
+<Tick @16.500000>
+<StateChange of <Machine state=2> 0->1 @21.000000>
+<StateChange of <RepairMan state=1> 0->1 @21.000000>
+<StateChange of <Machine state=2> 1->2 @21.000000>
+<Simulation stop @21.000000>
+Per-machine utilities:
+0: 21.000
+   1|       1|           16.500|21.000
+DEBUG:  Starting case 2 with params [20.0, 3.0]
+DEBUG:  Simulation begins at 0.000000
+DEBUG:  Tick at 0.000000
+DEBUG:  Breaking down from state 0
+DEBUG:  Repairing <Machine state=1>
+DEBUG:  Repairing from state 1
+DEBUG:  Tick at 7.000000
+DEBUG:  Breaking down from state 0
+DEBUG:  Tick at 7.000000
+DEBUG:  Breaking down from state 0
+DEBUG:  Tick at 7.000000
+DEBUG:  Starting from state 2
+DEBUG:  Repairing <Machine state=1>
+DEBUG:  Repairing from state 1
+DEBUG:  Tick at 16.500000
+DEBUG:  Starting from state 2
+DEBUG:  Repairing <Machine state=1>
+DEBUG:  Repairing from state 1
+DEBUG:  Tick at 19.000000
+DEBUG:  Breaking down from state 0
+DEBUG:  Simulation ends at 21.000000
+Event stream:
+<Simulation start @0.000000>
+<StateChange of <Machine state=1> None->0 @0.000000>
+<StateChange of <Machine state=0> None->0 @0.000000>
+<StateChange of <Machine state=2> None->0 @0.000000>
+<StateChange of <RepairMan state=1> None->0 @0.000000>
+<Tick @0.000000>
+<StateChange of <Machine state=1> 0->1 @7.000000>
+<StateChange of <RepairMan state=1> 0->1 @7.000000>
+<StateChange of <Machine state=1> 1->2 @7.000000>
+<Tick @7.000000>
+<StateChange of <Machine state=0> 0->1 @7.000000>
+<Tick @7.000000>
+<StateChange of <Machine state=2> 0->1 @7.000000>
+<Tick @7.000000>
+<StateChange of <Machine state=1> 2->0 @16.500000>
+<StateChange of <Machine state=0> 1->2 @16.500000>
+<Tick @16.500000>
+<StateChange of <Machine state=0> 2->0 @19.000000>
+<StateChange of <Machine state=2> 1->2 @19.000000>
+<Tick @19.000000>
+<StateChange of <Machine state=1> 0->1 @21.000000>
+<Simulation stop @21.000000>
+Per-machine utilities:
+0: 21.000
+1: 7.000
+2: 7.000
+   2|       3|            0.000|11.667
+End of program.
